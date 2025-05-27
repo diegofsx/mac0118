@@ -97,3 +97,53 @@ main p {
 .aula-item:hover {
   transform: scale(1.05);
 }
+
+.tabela-informacoes {
+  background-color: #002244;
+  color: #f5faff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.tabela-informacoes h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #99ccff;
+}
+
+.tabela-informacoes table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: linear-gradient(135deg, #003366, #004080);
+  border: 2px solid #336699;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tabela-informacoes th, 
+.tabela-informacoes td {
+  padding: 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid #336699;
+}
+
+.tabela-informacoes th {
+  background-color: #004080;
+  color: #ffffff;
+  font-weight: bold;
+  width: 30%;
+}
+
+.tabela-informacoes td {
+  background-color: #f0f8ff;
+  color: #002244;
+}
+
+.tabela-informacoes tr:last-child th,
+.tabela-informacoes tr:last-child td {
+  border-bottom: none;
+}
+
