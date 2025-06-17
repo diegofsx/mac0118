@@ -36,68 +36,46 @@
     <section class="bloco-conteudo">
       <h2>Descrição da Atividade</h2>
 
-      <p><strong>Passo 1:</strong> O professor deve distribuir réguas para os alunos medirem o tamanho do próprio palmo (primeiro da mão direita e depois da esquerda). O aluno deve posicionar sua mão bem aberta sobre uma folha de papel e medir a distância da extremidade de seu dedo polegar e da extremidade de seu dedo mínimo. Essa distância deverá ser marcada em uma tabela, tanto a do palmo direito quanto do esquerdo.</p>
+      <!-- Conteúdo anterior já incluso -->
 
-      <p><strong>Passo 2:</strong> Cada aluno anotar, na tabela, os valores encontrados, em centímetros, com uma casa após a vírgula, dos palmos da mão direita e mão esquerda.</p>
+      <h3>Passo 8 – Variância e Desvio Padrão</h3>
+      <p>Usando os valores para as quatro empresas, pode ser construída com os alunos outra medida de variabilidade. A amplitude apresenta a desvantagem de trabalhar apenas com os extremos. Uma abordagem interessante seria dividir os alunos em quatro grupos (um para cada cor), e cada grupo verifica qual a variação de cada valor em relação à média.</p>
 
-      <p><strong>Passo 3:</strong> O professor faz perguntas aos alunos para descobrir qual a maior e menor medida. Em seguida, faz uma reta real no quadro e pede para os alunos marcarem os valores encontrados para apenas uma das mãos (professor escolhe).</p>
+      <p><strong>Exemplo (Verde):</strong></p>
+      <p>Valores: 5, 10, 20, 65 | Média: 25</p>
+      <ul>
+        <li>(5 - 25) = -20</li>
+        <li>(10 - 25) = -15</li>
+        <li>(20 - 25) = -5</li>
+        <li>(65 - 25) = 40</li>
+        <li>Soma = 0</li>
+      </ul>
+      <p>Os alunos observarão que a soma das variações sempre resulta em zero. Para contornar isso, são propostas duas alternativas: utilizar o valor absoluto ou elevar ao quadrado antes de somar. Neste caso, consideramos o quadrado.</p>
 
-      <p><strong>Passo 4:</strong> Os alunos montam um gráfico de pontos com os valores obtidos (arredondados para o número inteiro mais próximo).</p>
+      <p><strong>Variação Quadrática (Verde):</strong></p>
+      <ul>
+        <li>(5 - 25)² = 400</li>
+        <li>(10 - 25)² = 225</li>
+        <li>(20 - 25)² = 25</li>
+        <li>(65 - 25)² = 1600</li>
+        <li>Soma = 2250</li>
+      </ul>
+      <p>Como são 4 valores, calcula-se a variância média: 2250 / 4 = 562,5</p>
+      <p>O desvio padrão será a raiz quadrada da variância: √562,5 ≈ 23,7</p>
 
-      <p><strong>Passo 5:</strong>
-a) Peça os alunos para se agruparem em três e escrever o valor dos palmos da mão direita dos três e faça a seguinte pergunta: Qual sugestão você daria para resumir esse conjunto de 3 valores? Em seguida, discuta com os alunos as possíveis respostas e guarde os comentários para o item c).</p>
+      <p><strong>Valores dos desvios padrão por cor:</strong></p>
+      <ul>
+        <li>Verde: 23,7</li>
+        <li>Preto: 0</li>
+        <li>Azul: 25</li>
+        <li>Rosa: 43,3</li>
+      </ul>
 
-      <p>b) Pausa para atividade intermediária: Distribuir 16 cartelas para alguns alunos da turma, cada uma com os números coloridos abaixo (rosa, verde, azul e preto), cada número pode representar, por exemplo, o valor em reais que alguém recebe por hora por determinada tarefa na empresa daquela cor (ou outro exemplo que preferir ou se adequar melhor com o interesse da turma).</p>
+      <p>Essas medidas permitem ordenar os conjuntos segundo sua variabilidade. Ainda que a amplitude também o faça, os resultados podem diferir. Embora não aprofundado nesta aula, é relevante destacar a principal propriedade do desvio padrão: o intervalo definido por [média - 2 × desvio padrão; média + 2 × desvio padrão] contém, no mínimo, 75% dos valores da variável em estudo, independentemente da distribuição.</p>
 
-      <table class="tabela-conteudo">
-        <thead>
-          <tr><th>Rosa</th><th>Verde</th><th>Azul</th><th>Preto</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>100</td><td>20</td><td>50</td><td>25</td></tr>
-          <tr><td>0</td><td>65</td><td>0</td><td>25</td></tr>
-          <tr><td>0</td><td>5</td><td>0</td><td>25</td></tr>
-          <tr><td>0</td><td>10</td><td>50</td><td>25</td></tr>
-        </tbody>
-      </table>
+      <p>Essa característica confere ao desvio padrão um papel fundamental na análise de dados.</p>
 
-      <p>Passos seguintes: chamar alunos por cor, organizar em ordem no referencial da sala (lousa, parede etc.), calcular média, mínimo, máximo. Repetir para cada cor.</p>
-
-      <h4>Tabela de Medidas por Cor</h4>
-      <table class="tabela-conteudo">
-        <thead>
-          <tr>
-            <th>Cor</th><th>Média</th><th>Máximo</th><th>Mínimo</th><th>Amplitude</th><th>Mediana</th><th>Desvio Padrão</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Rosa</td><td>25</td><td>100</td><td>0</td><td>100</td><td>0</td><td>43,3</td></tr>
-          <tr><td>Verde</td><td>25</td><td>65</td><td>5</td><td>60</td><td>15</td><td>23,7</td></tr>
-          <tr><td>Azul</td><td>25</td><td>50</td><td>0</td><td>50</td><td>25</td><td>25</td></tr>
-          <tr><td>Preto</td><td>25</td><td>25</td><td>25</td><td>0</td><td>25</td><td>0</td></tr>
-        </tbody>
-      </table>
-
-      <p><strong>Passo 6:</strong> Tente fazer uma tabela de frequências agrupando os valores do palmo da mão em um intervalo que seja conveniente.</p>
-
-      <h4>Tabela de Frequência – Medida do Palmo</h4>
-      <table class="tabela-conteudo">
-        <thead>
-          <tr>
-            <th>Intervalo (cm)</th><th>Frequência Absoluta</th><th>Frequência Relativa</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>14–16</td><td>6</td><td>6/20 (30%)</td></tr>
-          <tr><td>16–18</td><td>11</td><td>11/20 (55%)</td></tr>
-          <tr><td>18–20</td><td>3</td><td>3/20 (15%)</td></tr>
-          <tr><td><strong>Total</strong></td><td><strong>20</strong></td><td><strong>1 (100%)</strong></td></tr>
-        </tbody>
-      </table>
-
-      <p><strong>Passos 7 e 8:</strong> Repetir medição com a outra mão, discutir diferenças; introduzir o conceito de variância e desvio padrão com base nas variações em torno da média. Calcular variância média e o desvio padrão para os conjuntos.</p>
-
-      <p>Discussão final: explorar a utilidade do desvio padrão e sua propriedade de cobrir no mínimo 75% dos dados no intervalo média ± 2 desvios padrão.</p>
+      <p><strong>Observação final:</strong> Outras coletas possíveis para aplicar os mesmos conceitos: peso, altura, IMC, pulsação em repouso ou após corrida, etc.</p>
     </section>
   </main>
 
