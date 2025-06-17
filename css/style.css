@@ -172,4 +172,26 @@ main p {
   margin: 10px 0;
 }
 
+.tabela-conteudo {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #f0f8ff;
+  color: #002244;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabela-conteudo th {
+  background-color: #99ccff;
+  color: #002244;
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #336699;
+}
+
+.tabela-conteudo td {
+  padding: 10px;
+  border: 1px solid #336699;
+}
+
 
