@@ -3,16 +3,11 @@ programa {
 funcao vazio inicio (  )  {
 real numA <- 0.00
 real numB <- 0.00
-real numC <- 0.00
 real med <- 0.00
-real dp <- 0.00
 leia ( numA )
 leia ( numB )
-leia ( numC )
-med <-  ( numA + numB + numC )  / 3
+med <-  ( numA + numB )  / 2
 escreva ( med, "\n" )
-dp <-  ( numA - med )  *  ( numA - med )  +  (  ( numB - med )  *  ( numB - med )  )  +  ( numC - med )  *  ( numC - med )
-escreva ( Matematica.raiz_quadrada ( dp ) / Matematica.raiz_quadrada ( 3.00 ), "\n" )
 }
 
 }
