@@ -1,52 +1,220 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Estatística na Educação</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-  <header>
-    <h1 class="titulo-centralizado">Estatística e Educação Matemática</h1>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apresentação | Estatística na Educação</title>
 
-  <div class="sub-header">
-    <nav class="nav">
-      <button class="nav-button" onclick="location.href='index.html'">Página Inicial</button>
-      <button class="nav-button" onclick="location.href='apresentacao.html'">Quem somos?</button>
-      <button class="nav-button" onclick="location.href='bibliografia.html'">Referências</button>
-    </nav>
-  </div>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
-  <main>
-    <h2>Apresentação e Justificativa do Trabalho</h2>
-   <p>
-      Este trabalho foi desenvolvido como parte das atividades da disciplina de Computação, cursada na graduação, com o objetivo principal de criar um site educacional voltado ao ensino de Estatística no Ensino Médio. O foco está especialmente em professores que desejam utilizar recursos computacionais como apoio didático em sala de aula, promovendo práticas pedagógicas mais interativas, significativas e contextualizadas.
-    </p>
-    <p>
-      A proposta surgiu da compreensão de que o ensino de Estatística, previsto na Base Nacional Comum Curricular (BNCC), exige não apenas o domínio conceitual por parte dos alunos, mas também habilidades de interpretação, representação e análise de dados reais em diferentes contextos. Nesse sentido, o uso da computação como ferramenta pedagógica possibilita aproximar a Estatística da realidade dos estudantes, fortalecendo a sua aprendizagem.
-    </p>
-    <p>
-      O site desenvolvido apresenta um resumo dos principais tópicos de Estatística Descritiva — como medidas de tendência central (média, mediana, moda) e medidas de dispersão (amplitude, variância, desvio padrão) — organizados de maneira clara, acessível e com exemplos interativos. Além disso, o projeto visa servir como material de apoio ao professor, que poderá utilizá-lo como referência para preparar aulas, atividades práticas e explorar ferramentas computacionais simples para análise de dados com os alunos.
-    </p>
-    <p>
-      Este trabalho articula-se com a perspectiva da Educação Matemática Crítica (EMC), que propõe reflexões importantes sobre o ensino da matemática, rompendo com o modelo tradicional baseado apenas no paradigma do exercício — caracterizado pela memorização de algoritmos e respostas únicas — e defendendo práticas que promovam investigação, reflexão, diálogo e aprendizagem significativa.
-    </p>
-    <p>
-      Inspirada pelas ideias de Ole Skovsmose, a EMC não é uma metodologia pedagógica específica, mas uma expressão de preocupações sobre a educação matemática e seus impactos na formação do indivíduo. O pensamento crítico é central nesta abordagem, assim como a noção de cenários para investigação, que transforma o ensino em uma atividade investigativa, permitindo que os estudantes explorem hipóteses, formulem descobertas e contextualizem a matemática em sua realidade social e cotidiana.
-    </p>
-    <p>
-      Neste sentido, este trabalho também se relaciona com uma experiência de formação docente, em que futuros professores participaram de um projeto investigativo intitulado “Educação Matemática Crítica em Ação na Formação de Professores que Ensinam Matemática”. A proposta envolveu a criação de atividades baseadas em cenários para investigação, permitindo que os licenciandos transformassem exercícios tradicionais em situações que estimulassem a reflexão, a crítica e a aplicação dos conceitos matemáticos em contextos reais ou semirrealistas.
-    </p>
-    <p>
-      Essa perspectiva rompe com o modelo tradicional de ensino, no qual o professor ocupa uma posição autoritária, transmitindo conteúdos e avaliando respostas corretas previamente definidas. Em contrapartida, os cenários para investigação propõem um ambiente no qual o aluno é protagonista, conduzindo o processo de aprendizagem através de descobertas próprias, com o apoio de um professor que atua como mediador e incentivador de questionamentos.
-    </p>
-    <p>
-      A construção deste site, portanto, integra Computação e Educação Matemática Crítica, alinhando-se às demandas contemporâneas por práticas pedagógicas inovadoras e ao uso consciente da tecnologia. Ao mesmo tempo, proporciona aos estudantes de graduação a oportunidade de aplicar seus conhecimentos em projetos com impacto social e educacional, contribuindo para a modernização do ensino e para o fortalecimento de uma prática docente que valoriza o pensamento crítico, a participação ativa dos alunos e a reflexão sobre o papel da matemática na sociedade.
-    </p>
-  </main>
+    <style>
+      /* ---------------------- */
+      /*      Design Tokens    */
+      /* ---------------------- */
+      :root {
+        --clr-primary: #355c7d;
+        --clr-secondary: #6c5b7b;
+        --clr-accent: #f67280;
+        --clr-bg: #f5f7fa;
+        --clr-white: #ffffff;
+        --radius-l: 1.25rem;
+        --transition: 0.25s ease;
+      }
 
-  <script src="lib/script.js"></script>
-</body>
+      /* ---------------------- */
+      /*       Reset & Base     */
+      /* ---------------------- */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        line-height: 1.6;
+        background: var(--clr-bg);
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      a {
+        color: var(--clr-accent);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color var(--transition);
+      }
+      a:hover,
+      a:focus-visible {
+        color: var(--clr-secondary);
+      }
+
+      /* ---------------------- */
+      /*         Header         */
+      /* ---------------------- */
+      header {
+        background: linear-gradient(135deg, var(--clr-primary), var(--clr-secondary));
+        color: var(--clr-white);
+        padding: 2.5rem 1rem 3rem;
+        text-align: center;
+        border-bottom-left-radius: var(--radius-l);
+        border-bottom-right-radius: var(--radius-l);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      }
+      .titulo-centralizado {
+        font-size: clamp(1.75rem, 4vw + 1rem, 2.5rem);
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+
+      /* ---------------------- */
+      /*    Navegação (Sub-Header)  */
+      /* ---------------------- */
+      .sub-header {
+        margin-top: -1.5rem; /* sobrepor ligeiramente o header */
+        margin-bottom: 2rem;
+      }
+
+      .nav {
+        display: flex;
+        justify-content: center;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+      }
+
+      .nav-button {
+        background: var(--clr-primary);
+        color: var(--clr-white);
+        border: none;
+        padding: 0.65rem 1.25rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background var(--transition), transform var(--transition);
+      }
+      .nav-button:hover,
+      .nav-button:focus-visible {
+        background: var(--clr-secondary);
+        transform: translateY(-2px);
+      }
+
+      /* ---------------------- */
+      /*         Main           */
+      /* ---------------------- */
+      main {
+        width: min(90%, 60rem);
+        margin: 0 auto 3rem;
+        flex: 1;
+      }
+
+      main h2 {
+        font-size: 1.75rem;
+        color: var(--clr-primary);
+        margin-bottom: 0.75rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+        text-align: justify;
+      }
+
+      /* ---------------------- */
+      /*         Footer         */
+      /* ---------------------- */
+      footer {
+        margin-top: auto;
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
+        color: #666;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="titulo-centralizado">Estatística e Educação Matemática</h1>
+    </header>
+
+    <div class="sub-header">
+      <nav class="nav" aria-label="navegação principal">
+        <button class="nav-button" onclick="location.href='index.html'">Página Inicial</button>
+        <button class="nav-button" onclick="location.href='apresentacao.html'">Quem somos?</button>
+        <button class="nav-button" onclick="location.href='bibliografia.html'">Referências</button>
+      </nav>
+    </div>
+
+    <main>
+      <h2>Apresentação e Justificativa do Trabalho</h2>
+
+      <p>
+        Este trabalho foi desenvolvido como parte das atividades da disciplina de Computação, cursada na graduação, com o objetivo principal de criar um
+        site educacional voltado ao ensino de Estatística no Ensino Médio. O foco está especialmente em professores que desejam utilizar recursos
+        computacionais como apoio didático em sala de aula, promovendo práticas pedagógicas mais interativas, significativas e contextualizadas.
+      </p>
+      <p>
+        A proposta surgiu da compreensão de que o ensino de Estatística, previsto na Base Nacional Comum Curricular (BNCC), exige não apenas o domínio
+        conceitual por parte dos alunos, mas também habilidades de interpretação, representação e análise de dados reais em diferentes contextos. Nesse
+        sentido, o uso da computação como ferramenta pedagógica possibilita aproximar a Estatística da realidade dos estudantes, fortalecendo a sua
+        aprendizagem.
+      </p>
+      <p>
+        O site desenvolvido apresenta um resumo dos principais tópicos de Estatística Descritiva — como medidas de tendência central (média, mediana,
+        moda) e medidas de dispersão (amplitude, variância, desvio padrão) — organizados de maneira clara, acessível e com exemplos interativos. Além
+        disso, o projeto visa servir como material de apoio ao professor, que poderá utilizá-lo como referência para preparar aulas, atividades
+        práticas e explorar ferramentas computacionais simples para análise de dados com os alunos.
+      </p>
+      <p>
+        Este trabalho articula-se com a perspectiva da Educação Matemática Crítica (EMC), que propõe reflexões importantes sobre o ensino da matemática,
+        rompendo com o modelo tradicional baseado apenas no paradigma do exercício — caracterizado pela memorização de algoritmos e respostas únicas —
+        e defendendo práticas que promovam investigação, reflexão, diálogo e aprendizagem significativa.
+      </p>
+      <p>
+        Inspirada pelas ideias de Ole Skovsmose, a EMC não é uma metodologia pedagógica específica, mas uma expressão de preocupações sobre a educação
+        matemática e seus impactos na formação do indivíduo. O pensamento crítico é central nesta abordagem, assim como a noção de cenários para
+        investigação, que transforma o ensino em uma atividade investigativa, permitindo que os estudantes explorem hipóteses, formulem descobertas e
+        contextualizem a matemática em sua realidade social e cotidiana.
+      </p>
+      <p>
+        Neste sentido, este trabalho também se relaciona com uma experiência de formação docente, em que futuros professores participaram de um projeto
+        investigativo intitulado “Educação Matemática Crítica em Ação na Formação de Professores que Ensinam Matemática”. A proposta envolveu a criação
+        de atividades baseadas em cenários para investigação, permitindo que os licenciandos transformassem exercícios tradicionais em situações que
+        estimulassem a reflexão, a crítica e a aplicação dos conceitos matemáticos em contextos reais ou semirrealistas.
+      </p>
+      <p>
+        Essa perspectiva rompe com o modelo tradicional de ensino, no qual o professor ocupa uma posição autoritária, transmitindo conteúdos e avaliando
+        respostas corretas previamente definidas. Em contrapartida, os cenários para investigação propõem um ambiente no qual o aluno é protagonista,
+        conduzindo o processo de aprendizagem através de descobertas próprias, com o apoio de um professor que atua como mediador e incentivador de
+        questionamentos.
+      </p>
+      <p>
+        A construção deste site, portanto, integra Computação e Educação Matemática Crítica, alinhando-se às demandas contemporâneas por práticas
+        pedagógicas inovadoras e ao uso consciente da tecnologia. Ao mesmo tempo, proporciona aos estudantes de graduação a oportunidade de aplicar seus
+        conhecimentos em projetos com impacto social e educacional, contribuindo para a modernização do ensino e para o fortalecimento de uma prática
+        docente que valoriza o pensamento crítico, a participação ativa dos alunos e a reflexão sobre o papel da matemática na sociedade.
+      </p>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Estatística na Educação. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="lib/script.js"></script>
+  </body>
 </html>
