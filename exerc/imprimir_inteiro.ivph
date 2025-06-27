@@ -1,0 +1,9 @@
+programa { 
+
+	funcao vazio inicio (  )  {
+		inteiro variavel_0 <- 0
+		leia ( variavel_0 ) 
+		escreva ( variavel_0, "\n" ) 
+	}
+
+}

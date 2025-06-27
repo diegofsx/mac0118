@@ -1,0 +1,17 @@
+programa { 
+
+	funcao vazio inicio (  )  {
+		inteiro variavel_0 <- 0
+		inteiro variavel_1 <- 0
+		leia ( variavel_0 ) 
+		repita_enquanto ( variavel_0 != 0 )  { 
+			se ( variavel_0 % 2 != 0 )  { 
+				variavel_1 <- variavel_1 + variavel_0
+			} senao {
+			}
+			leia ( variavel_0 ) 
+		}
+		escreva ( variavel_1, "\n" ) 
+	}
+
+}

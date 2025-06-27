@@ -1,0 +1,7 @@
+programa { 
+
+	funcao vazio inicio (  )  {
+		escreva ( "Ola mundo!", "\n" ) 
+	}
+
+}

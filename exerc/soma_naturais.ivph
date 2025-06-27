@@ -1,0 +1,14 @@
+programa { 
+
+	funcao vazio inicio (  )  {
+		inteiro variavel_0 <- 0
+		inteiro soma <- 0
+		leia ( variavel_0 ) 
+		repita_enquanto ( variavel_0 > 0 )  { 
+			soma <- variavel_0 + soma
+			leia ( variavel_0 ) 
+		}
+		escreva ( soma, "\n" ) 
+	}
+
+}
